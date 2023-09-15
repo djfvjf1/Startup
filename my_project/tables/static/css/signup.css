@@ -1,0 +1,44 @@
+.btn {
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #1600d8; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+   }
+.form{
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+form label {
+    display: flex;
+    justify-content: left;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  form input, form textarea {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 6px;
+    width: 30%;
+  }
+
+
+  .back{
+    display: block; 
+    width: 100px;
+    margin-top: 35px;
+    background: rgb(110, 110, 110);
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem; 
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}

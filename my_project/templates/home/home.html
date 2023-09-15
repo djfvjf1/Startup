@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="all">
+        <div class="head">
+            <h1>Школа цифровых технологий университета "AlmaU"</h1>
+            <a href="{% url 'profile' %}" class="btn">Профиль</a>
+        </div>
+        <h2>Перечень патентов, полученных в 20____-20___ годы</h2>
+        <a href="{% url 'create_table' %}" class="btn">Таблица №20</a>
+        <h2>Договора о международном сотрудничестве</h2>
+        <a href="{% url 'create_table23' %}" class="btn">Таблица №23</a>
+        <h2>Соглашения о сотрудничестве с организациями образования или научными или научно-образовательными или научно-производственными центрами (магистратура, докторантура)</h2>
+        <a href="{% url 'create_table26' %}" class="btn">Таблица №26</a>
+        <h2 class="foot">Выгрузить данные в word</h2>
+        <a href="{% url 'export_data_to_word' %}" class="btn">Export Data to Word</a>
+    </div>
+</body>
+</html>

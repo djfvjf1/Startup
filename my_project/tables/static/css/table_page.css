@@ -1,0 +1,24 @@
+.btn{ 
+    margin-top: 25px;
+    margin-left: 10px;
+    display: block; 
+    width: 100px;
+    background: #1600d8;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem; 
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none; 
+}
+
+.back{
+    margin-top: 100px;
+    margin-left: 10px;
+    display: inline-block; 
+    background: rgb(110, 110, 110);
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem; 
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}

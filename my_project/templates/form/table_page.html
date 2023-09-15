@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/table_page.css' %}">
+</head>
+<body>
+
+    <h1>Перечень патентов, полученных в 20____-20___ годы</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Author Name</th>
+                <th>Patent</th>
+                <th>Year</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ table.author_name }}</td>
+                <td>{{ table.patent }}</td>
+                <td>{{ table.year }}</td>
+                <td>{{ table.title }}</td>
+            </tr>
+        </tbody>
+    </table>
+   <br>
+    <a href="{% url 'export_data_to_word20' %}" class="btn">Export Data to Word</a>
+    <a href="{% url 'home' %}" class="back">Назад</a>
+    <a class="btn btn-default" href="{% url 'edit_form' pk=table.pk %}">Edit</a>
+</body>
+</html>

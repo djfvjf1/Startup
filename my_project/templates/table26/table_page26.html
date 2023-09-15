@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/table_page.css' %}">
+</head>
+<body>
+    
+     <h1>Соглашения о сотрудничестве с организациями образования или научными или научно-образовательными или научно-производственными центрами (магистратура, докторантура)</h1>
+     <table>
+         <thead>
+             <tr>
+                 <th>Organisation</th>
+                 <th>Subject of contract</th>
+                 <th>Directon of speciality</th>
+                 <th>Date of conclusion of the contract</th>
+                 <th>Terms of the contract</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>{{ table.organisation }}</td>
+                 <td>{{ table.subject_of_contract }}</td>
+                 <td>{{ table.directon_of_speciality }}</td>
+                 <td>{{ table.date_of_conclusion_of_the_contract }}</td>
+                 <td>{{ table.terms_of_the_contract }}</td>
+             </tr>
+         </tbody>
+     </table>
+    <br>
+    <a href="{% url 'export_data_to_word26' %}" class="btn">Export Data to Word</a>
+    <a href="{% url 'home' %}" class="back">Назад</a>
+    <a class="btn btn-default" href="{% url 'edit_form26' pk=table.pk %}">Edit</a>
+</body>
+</html>

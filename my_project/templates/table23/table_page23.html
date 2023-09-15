@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/table_page.css' %}">
+</head>
+<body>
+    
+    <h1>Договора о международном сотрудничестве</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Name of partner</th>
+                <th>Date of contract</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ table.subject }}</td>
+                <td>{{ table.name_of_partner }}</td>
+                <td>{{ table.date_of_contract }}</td>
+                <td>{{ table.start_date }}</td>
+                <td>{{ table.end_date }}</td>
+                <td>{{ table.availability }}</td>
+            </tr>
+        </tbody>
+    </table>
+   <br>
+    <a href="{% url 'export_data_to_word23' %}" class="btn">Export Data to Word</a>
+    <a href="{% url 'home' %}" class="back">Назад</a>
+    <a class="btn btn-default" href="{% url 'edit_form23' pk=table.pk %}">Edit</a>
+</body>
+</html>

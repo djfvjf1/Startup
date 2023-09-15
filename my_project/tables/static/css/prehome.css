@@ -1,0 +1,12 @@
+.home{
+    text-align: center;
+}
+.btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #1600d8; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 10px; /* Скругляем уголки */
+    font-size: 20px;
+   }
